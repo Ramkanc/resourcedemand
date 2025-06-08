@@ -22,8 +22,6 @@ form1_vals = {
     "end_wk": None
 }
 
-
-
 st.subheader("Input resource projection")
 
 def click_button(mgr):
@@ -38,6 +36,7 @@ with st.container(border=True):
     if tbl_button:
         st.info(f"Showing data for {selected_mgr} in {selected_vsl} value stream")
         st.session_state['featched_df'] = rd_data_ops.get_mgr(selected_mgr)
+    
        
 
 if 'featched_df' in st.session_state:

@@ -51,4 +51,3 @@ plt.tight_layout()
 st.pyplot(fig, use_container_width=True)
 
 st.dataframe(df)
-
